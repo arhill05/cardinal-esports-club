@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths for the application
@@ -35,11 +36,11 @@ module.exports = function (grunt) {
         dir: 'dist',
         commit: true,
         push: true,
-        message: 'massive UI overhaul, separation of concerns'
+        message: 'init push'
         },
         pages: {
         options: {
-            remote: 'https://github.com/arhill05/socratesv2.git',
+            remote: 'https://github.com/arhill05/cardinal-esports-club.git',
             branch: 'gh-pages'
             }
         }
